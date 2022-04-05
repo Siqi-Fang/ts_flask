@@ -9,14 +9,13 @@ import string
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import RegexpTokenizer
 from lime import lime_text
-from sklearn.pipeline import make_pipeline
 from lime.lime_text import LimeTextExplainer
 import plotly
 import plotly.graph_objects as go
 from sklearn.pipeline import make_pipeline
 import pickle
 import bz2
-from memory_profiler import profile  # dont put in requirements
+#from memory_profiler import profile  # dont put in requirements
 
 sentiments = ["Negative", "Positive"]
 STOPWORDS = []

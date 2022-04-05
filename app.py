@@ -1,14 +1,12 @@
 from flask import Flask, render_template, request
-from memory_profiler import profile  # dont put in requirements
-
+#from memory_profiler import profile  # dont put in requirements
 import model
 
 app = Flask(__name__)
-app.debug = True
-
+app.debug = False
 
 @app.route('/', methods=['POST', 'GET'])
-@profile
+#@profile
 def home():  # put application's code here
     if request.method == 'POST':
         context = {}
