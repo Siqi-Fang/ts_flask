@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Twitter Sentiment Analysis{% endblock %}
+
+{% block left  %}
+<div class="container" style="padding-top: 10px;">
+    <ul class="nav flex-column">
+        <li class="nav-item" style="padding: 20px 0">
+            <form method = "POST">
+                <div class="form-group" style="padding-bottom: 10px">
+                    <label class="text-white"for="tweet">Enter Your Tweet Here</label>
+                    <textarea name = "tweet" class="form-control" id="tweet" rows="3"
+                              placeholder="Say something..." required></textarea>
+                    </div>
+                <input type="submit" name="start_analyze" class="btn btn-success" value="Analyze">
+            </form>
+        </li>
+
+        <li class="nav-item" style="padding: 20px 0">
+            <div><span>API input...</span></div>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block right%}
+{% endblock %}

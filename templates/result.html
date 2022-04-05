@@ -1,0 +1,46 @@
+{% extends 'home.html' %}
+{% block title %} Sentiment Analysis -- Showing Results {% endblock %}
+
+{% block right%}
+
+<div class="container" style="padding:20px 10px">
+
+  <div class="card">
+    <h4 class="card-header">
+        Result
+    </h4>
+    <div class="card-body">
+    Your tweet has a {{sentiment|safe}} sentiment with a confidence of {{confidence}}%.</div>
+  </div>
+
+    <div class="card mt-3">
+    <h4 class="card-header">
+        Tweet:
+    </h4>
+    <div class="card-body">
+        {{text|safe}}
+    </div>
+  </div>
+
+<div class="row mt-4">
+  <div class="col-md-8">
+      {{graph|safe}}
+  </div>
+
+  <div class="col-md-4 mt-4">
+  <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">How to understand word importance:</div>
+    <div class="card-body">
+    <p class="card-text"><small> Word importance describes how much that word contributes to the sentiment
+    of the tweet according to our model. The sign indicates its sentiment(>0 for positive), and the magnitude indicates
+      the strength of that sentiment. When a positive word is removed, the confidence of the prediction
+      change in the negative direction drops by the word's importance(i.e. if the sentiment is negative, it
+      becomes more negative, and vice versa).</small></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+{% endblock %}
