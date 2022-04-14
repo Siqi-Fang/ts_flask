@@ -1,7 +1,9 @@
 # ts_flask
-Flask deployment of sentiment analysis model, no database ver
+Flask deployment of sentiment analysis model. 
 
-View the APP Here
+See the model details [here.](https://github.com/Siqi-Fang/Twitter-Sentiment-Analysis/blob/main/README.md)
+
+Take me to the APP 
 ---
 https://sfang.pythonanywhere.com/
 
@@ -11,5 +13,6 @@ App Preview
 
 Note
 ---
-To run the downloaded app on your local machine, move the nltk_data to the project root folder.
-Or manually set the search path with `nltk.data.path.append('../your/dir/to/nltk_data/')`
+If you don't already have nltk data downloaded on your local environment, to run the downloaded app, move the nltk_data to the project root folder.
+
+Or manually set the search path with `nltk.data.path.append('../your/dir/to/nltk_data/')` 
